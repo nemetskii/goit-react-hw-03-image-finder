@@ -34,6 +34,11 @@ export class Searchbar extends Component {
             this.resetSearchInput();
           }}
         >
+          <SearchFormButtonStyle type="submit">
+            <IconContext.Provider value={{ size: '24px' }}>
+              <FcSearch />
+            </IconContext.Provider>
+          </SearchFormButtonStyle>
           <SearchFormInputStyle
             type="text"
             autocomplete="off"
@@ -42,11 +47,6 @@ export class Searchbar extends Component {
             onChange={this.handleSearchQuery}
             value={this.state.searchQuery}
           />
-          <SearchFormButtonStyle type="submit">
-            <IconContext.Provider value={{ size: '24px' }}>
-              <FcSearch />
-            </IconContext.Provider>
-          </SearchFormButtonStyle>
         </SearFormStyle>
       </SearchbarStyle>
     );

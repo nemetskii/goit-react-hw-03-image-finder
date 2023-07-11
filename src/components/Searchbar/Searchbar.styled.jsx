@@ -50,12 +50,12 @@ export const SearchFormButtonStyle = styled.button`
 export const SearchFormInputStyle = styled.input`
   display: inline-block;
   width: 100%;
+  height: 70%;
   font: inherit;
-  font-size: 20px;
+  font-size: 18px;
   border: none;
   outline: none;
   padding-left: 10px;
-  padding-right: 10px;
 
   &::placeholder {
     font: inherit;
